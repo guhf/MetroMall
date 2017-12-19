@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.metro.metromall.fragments.vip_center.FootPrintFragment"
+    android:background="@color/bak"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <include layout="@layout/fragment_title_gp"/>
+
+
+
+    <include layout="@layout/fragment_null_info"/>
+
+</LinearLayout>

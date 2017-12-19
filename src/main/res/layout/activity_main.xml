@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.metro.metromall.MainActivity"
+    android:orientation="vertical"
+    android:background="@color/bak"
+    android:id="@+id/main_view">
+
+    <com.metro.metromall.tools.NoScrollViewPager
+        android:id="@+id/main_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_radio">
+
+    </com.metro.metromall.tools.NoScrollViewPager>
+        <RadioGroup
+            android:id="@+id/main_radio"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Fifty"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true">
+
+            <com.metro.metromall.tools.MyRadioButton
+                android:id="@+id/bottom_home"
+                style="@style/radioButton"
+                android:drawableTop="@drawable/selector_home"
+                android:text="@string/home"/>
+            <com.metro.metromall.tools.MyRadioButton
+                android:id="@+id/bottom_classify"
+                style="@style/radioButton"
+                android:drawableTop="@drawable/selector_classify"
+                android:text="@string/classify" />
+            <RadioButton
+                android:id="@+id/ct"
+                style="@style/radioButton"
+                android:visibility="invisible"/>
+            <com.metro.metromall.tools.MyRadioButton
+                android:id="@+id/bottom_shop_car"
+                style="@style/radioButton"
+                android:drawableTop="@drawable/selector_cart"
+                android:text="@string/shop_car"/>
+            <com.metro.metromall.tools.MyRadioButton
+                android:id="@+id/bottom_my"
+                style="@style/radioButton"
+                android:drawableTop="@drawable/selector_my"
+                android:text="@string/my"/>
+        </RadioGroup>
+    <com.metro.metromall.tools.RoundImageView
+        android:id="@+id/main_center"
+        android:layout_width="@dimen/SixtyFive"
+        android:layout_height="@dimen/SixtyFive"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

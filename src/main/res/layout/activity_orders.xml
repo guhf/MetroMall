@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.metro.metromall.activities.OrdersActivity"
+    android:background="@color/bak"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/fragment_title_gp"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Forty"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/all_order"
+            android:layout_weight="1"
+            style="@style/ordersRadioButton"
+            android:text="@string/all_order"/>
+        <RadioButton
+            android:id="@+id/payment_pending"
+            android:layout_weight="1"
+            style="@style/ordersRadioButton"
+            android:text="@string/payment_pending"/>
+        <RadioButton
+            android:id="@+id/awaiting_delivery"
+            android:layout_weight="1"
+            style="@style/ordersRadioButton"
+            android:text="@string/awaiting_delivery"/>
+        <RadioButton
+            android:id="@+id/complete_order"
+            android:layout_weight="1"
+            style="@style/ordersRadioButton"
+            android:text="@string/complete_order"/>
+    </RadioGroup>
+    <View
+        android:id="@+id/line_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/Three"
+        android:background="@color/scroll_home_title"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/orders_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/Twenty">
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

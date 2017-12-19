@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="test">#d1cbc8</color>
+
+    <color name="bak">#f7f7f7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="dark_blue">#013b84</color>
+    <color name="gray">#808080</color>
+    <color name="bottom_check">#3070db</color>
+    <color name="dot_gray">#ccc</color>
+    <color name="dot_red">#f30815</color>
+    <color name="red">#ff0000</color>
+    <color name="black">#000000</color>
+    <color name="home_notice">#333333</color>
+    <color name="scroll_home_title">#003894</color>
+    <color name="big_title">#666666</color>
+    <color name="small_title">#272727</color>
+    <color name="price">#FA4A66</color>
+    <color name="oneself">#3070DB</color>
+    <color name="transparent">#00000000</color>
+    <color name="translucent">#e0000000</color>
+    <color name="login_edit">#01426a</color>
+    <color name="login_text">#040404</color>
+    <color name="lvl_text">#003b83</color>
+    <color name="vip_bak">#dbdbdb</color>
+    <color name="vip_item_bak">#e6e6e6</color>
+    <color name="vip_recommend">#999999</color>
+    <color name="tel">#00439a</color>
+    <color name="orders_yellow">#f3e500</color>
+    <color name="item_loading">#8a8a8a</color>
+    <color name="goods_default_bak">#f1f1f5</color>
+    <color name="goods_select_bak">#919CAA</color>
+
+</resources>

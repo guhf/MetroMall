@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/small_class_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/tel"
+        android:textSize="@dimen/fourteen"
+        android:text="@string/add_new_address"
+        android:layout_marginTop="@dimen/Ten"
+        android:layout_marginLeft="@dimen/Five" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/classify_item_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/Ten"
+        android:layout_marginLeft="@dimen/Five"
+        android:layout_marginRight="@dimen/Five"
+        android:layout_marginBottom="@dimen/Ten"
+        android:background="@color/white">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

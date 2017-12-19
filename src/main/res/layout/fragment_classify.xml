@@ -1,0 +1,75 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.metro.metromall.fragments.main.ClassifyFragment"
+    android:background="@color/bak"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <include layout="@layout/fragment_title_gp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1px"
+        android:padding="@dimen/Five"
+        android:background="@color/white">
+        <!--搜索title-->
+        <RelativeLayout
+            android:id="@+id/classify_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ThirtyFive"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/Five"
+            android:layout_marginRight="@dimen/Five"
+            android:background="@drawable/rounded_bak"
+            android:drawableRight="@mipmap/search"
+            android:focusable="false" />
+        <TextView
+            android:id="@+id/classify_search_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/qq"
+            android:padding="@dimen/Ten"
+            android:singleLine="true"
+            android:textColor="@color/dot_gray"
+            android:textSize="@dimen/fourteen"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:id="@+id/qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/search"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/Ten"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:id="@+id/tools_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" />
+        </ScrollView>
+        <com.metro.metromall.tools.NoScrollViewPager
+            android:id="@+id/goods_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout >

@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bak"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:id="@+id/notice_form"
+    tools:context="com.metro.metromall.fragments.NoticeFragment">
+
+    <include layout="@layout/fragment_title_gp" />
+
+    <com.metro.metromall.tools.SuperSwipeRefreshLayout
+        android:id="@+id/notice_swp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/notice_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+    </com.metro.metromall.tools.SuperSwipeRefreshLayout>
+</LinearLayout>

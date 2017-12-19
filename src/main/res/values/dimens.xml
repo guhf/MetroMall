@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--距离-->
+    <dimen name="One">1dp</dimen>
+    <dimen name="Two">2dp</dimen>
+    <dimen name="SixtyFour">64dp</dimen>
+    <dimen name="Fifty">50dp</dimen>
+    <dimen name="Ten">10dp</dimen>
+    <dimen name="Eight">8dp</dimen>
+    <dimen name="Five">5dp</dimen>
+    <dimen name="Three">3dp</dimen>
+    <dimen name="OneHundredFifty">150dp</dimen>
+    <dimen name="TwoHundred">200dp</dimen>
+    <dimen name="Forty">40dp</dimen>
+    <dimen name="FortyFive">45dp</dimen>
+    <dimen name="ThirtyFive">35dp</dimen>
+    <dimen name="Sixty">60dp</dimen>
+    <dimen name="SixtyThree">63dp</dimen>
+    <dimen name="SixtyFive">65dp</dimen>
+    <dimen name="Fifteen">15dp</dimen>
+    <dimen name="Twenty">20dp</dimen>
+    <dimen name="TwentyFive">25dp</dimen>
+    <dimen name="Hundred">100dp</dimen>
+    <dimen name="Thirty">30dp</dimen>
+    <dimen name="Eighty">80dp</dimen>
+    <dimen name="Seventy">70dp</dimen>
+    <dimen name="TwoHundredFifty">250dp</dimen>
+    <dimen name="ThreeHundred">300dp</dimen>
+    
+    <!--字体大小-->
+
+    <dimen name="ten">10sp</dimen>
+    <dimen name="twelve">12sp</dimen>
+    <dimen name="fourteen">14sp</dimen>
+    <dimen name="fifteen">15sp</dimen>
+    <dimen name="sixteen">16sp</dimen>
+    <dimen name="eighteen">18sp</dimen>
+    <dimen name="twenty">20sp</dimen>
+    <dimen name="twentyFour">24sp</dimen>
+    <dimen name="twentyTwo">22sp</dimen>
+
+</resources>

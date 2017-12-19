@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/null_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/ThreeHundred"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/cry_face" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/Twenty"
+        android:text="@string/null_sale"
+        android:textColor="@color/tel"
+        android:textSize="@dimen/sixteen" />
+
+    <Button
+        android:id="@+id/go_stroll"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/Thirty"
+        android:layout_marginTop="@dimen/Twenty"
+        android:background="@drawable/next"
+        android:text="@string/go_stroll"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sixteen" />
+</LinearLayout>

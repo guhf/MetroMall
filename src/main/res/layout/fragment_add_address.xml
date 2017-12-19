@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.metro.metromall.fragments.vip_center.AddAddressFragment"
+    android:orientation="vertical"
+    android:background="@color/bak"
+    android:clickable="true">
+
+    <include layout="@layout/fragment_title_gp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/FortyFive"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/add_address_text"
+            android:text="@string/consignee" />
+
+        <EditText
+            android:id="@+id/consignee"
+            style="@style/add_address_edit" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/FortyFive"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/One">
+        <TextView
+            style="@style/add_address_text"
+            android:text="@string/telephone" />
+        <EditText
+            android:id="@+id/consignee_telephone"
+            style="@style/add_address_edit"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/FortyFive"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/One">
+        <TextView
+            style="@style/add_address_text"
+            android:text="@string/area" />
+        <LinearLayout
+            android:id="@+id/area"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/Ten">
+            <TextView
+                android:id="@+id/area_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/address"
+                android:padding="@dimen/Five"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/right_arrow_small"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/FortyFive"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/One">
+        <TextView
+            style="@style/add_address_text"
+            android:text="@string/detail_address" />
+        <EditText
+            android:id="@+id/detail_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fourteen"
+            android:gravity="center_vertical"
+            android:hint="@string/hint_detail_address"
+            android:textColorHint="@color/dot_gray"
+            android:background="@null"
+            android:padding="@dimen/Five"
+            android:layout_marginRight="@dimen/Fifteen"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/FortyFive"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/One">
+        <CheckBox
+            android:id="@+id/default_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/Ten"
+            android:background="@drawable/shop_car_checkbox"
+            android:button="@null"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_address"
+            android:textSize="@dimen/fourteen"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/default_address"
+            android:layout_marginLeft="@dimen/Five"/>
+        <Button
+            android:id="@+id/save_address"
+            android:layout_width="@dimen/Eighty"
+            android:layout_height="@dimen/Thirty"
+            android:background="@drawable/next"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/Ten"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fourteen"
+            android:gravity="center"/>
+    </RelativeLayout>
+</LinearLayout>

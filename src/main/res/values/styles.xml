@@ -1,0 +1,111 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+        <style name="StartTheme" parent="AppTheme">
+            <item name="android:windowBackground">@mipmap/start</item>
+            <item name="android:windowNoTitle">true</item>
+            <item name="android:windowFullscreen">true</item>
+            <item name="windowActionBar">false</item>
+            <item name="windowNoTitle">true</item>
+    </style>
+    <!--android:Widget.CompoundButton.RadioButton-->
+    <style name="radioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/twelve</item>
+        <item name="android:textColor">@drawable/selector_bottom_text</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="ordersRadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/twelve</item>
+        <item name="android:textColor">@drawable/selector_bottom_text</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="goodsRadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/fifteen</item>
+        <item name="android:textColor">@drawable/selector_goods_button_color</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/selector_goods_button_bak</item>
+    </style>
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="my_info_title">
+        <item name="android:layout_width">@dimen/Eighty</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/fourteen</item>
+        <item name="android:layout_marginLeft">@dimen/Fifteen</item>
+    </style>
+
+    <style name="my_info_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/big_title</item>
+        <item name="android:textSize">@dimen/twelve</item>
+        <item name="android:layout_marginLeft">@dimen/Five</item>
+        <item name="android:padding">@dimen/Five</item>
+    </style>
+
+    <style name="add_address_text">
+        <item name="android:layout_width">@dimen/Eighty</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/fourteen</item>
+        <item name="android:layout_marginLeft">@dimen/Ten</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="add_address_edit">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/fourteen</item>
+        <item name="android:hint">@string/consignee_name</item>
+        <item name="android:textColorHint">@color/dot_gray</item>
+        <item name="android:layout_marginRight">@dimen/Ten</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:padding">@dimen/Five</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="search_text">
+        <item name="android:textSize">@dimen/fourteen</item>
+        <item name="android:textColor">@color/home_notice</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <!--&lt;!&ndash;选择地区动画&ndash;&gt;-->
+    <!--<style name="transformer" parent="@android:style/Animation.Activity">-->
+        <!--<item name="android:activityOpenEnterAnimation">@anim/enter_right</item>-->
+        <!--<item name="android:activityOpenExitAnimation">@anim/exit_left</item>-->
+        <!--<item name="android:activityCloseEnterAnimation">@anim/enter_left</item>-->
+        <!--<item name="android:activityCloseExitAnimation">@anim/exit_right</item>-->
+    <!--</style>-->
+</resources>

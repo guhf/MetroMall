@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bak"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context="com.metro.metromall.fragments.search.SearchResultFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Fifty"
+        android:background="@color/scroll_home_title"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/search_result_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/Ten"
+            android:src="@mipmap/left_arrow_back" />
+
+        <!--搜索title-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ThirtyFive"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/Ten"
+            android:layout_marginRight="@dimen/Ten"
+            android:layout_toRightOf="@+id/img_back"
+            android:background="@drawable/rounded_bak">
+
+            <TextView
+                android:id="@+id/search_result_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/Ten"
+                android:layout_toLeftOf="@+id/search_result_search"
+                android:background="@drawable/edit_bak_search"
+                android:drawablePadding="@dimen/Five"
+                android:padding="@dimen/Five"
+                android:singleLine="true"
+                android:textColor="@color/home_notice"
+                android:textColorHint="@color/dot_gray"
+                android:textSize="@dimen/fourteen"
+                android:gravity="center_vertical"/>
+
+            <ImageView
+                android:id="@+id/search_result_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/Ten"
+                android:src="@mipmap/_search" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/goods_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.metro.metromall.fragments.vip_center.DeliveryAddressFragment"
+    android:background="@color/bak"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:id="@+id/address_view">
+
+    <include layout="@layout/fragment_title_gp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_gp">
+        <LinearLayout
+            android:id="@+id/address_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/fragment_null_info"/>
+    <TextView
+        android:id="@+id/add_new_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Fifty"
+        android:background="@color/scroll_home_title"
+        android:text="@string/add_new_address"
+        android:textSize="@dimen/eighteen"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"/>
+
+</RelativeLayout>

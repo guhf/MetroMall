@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.metro.metromall.fragments.login.YRegFragment"
+    android:orientation="vertical"
+    android:background="@color/bak"
+    android:clickable="true">
+
+    <include layout="@layout/fragment_title_gp" />
+    <EditText
+        android:id="@+id/y_vip_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Forty"
+        android:layout_marginLeft="@dimen/Twenty"
+        android:layout_marginRight="@dimen/Twenty"
+        android:layout_marginTop="@dimen/Twenty"
+        android:background="@drawable/reg_edit"
+        android:hint="@string/vip_id_code"
+        android:padding="@dimen/Five"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textSize="@dimen/fourteen" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/Twenty"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/y_reg_auth_code"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/Forty"
+            android:layout_marginLeft="@dimen/Twenty"
+            android:layout_weight="1"
+            android:background="@drawable/reg_edit"
+            android:hint="@string/re_auth_code"
+            android:padding="@dimen/Five"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/fourteen"
+            android:maxLength="4"/>
+
+        <com.metro.metromall.utils.ValidationCode
+            android:id="@+id/y_reg_validation_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/Ten"
+            android:layout_marginRight="@dimen/Twenty" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Forty"
+        android:layout_marginLeft="@dimen/Twenty"
+        android:layout_marginTop="@dimen/Twenty"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/y_reg_phone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/Ten"
+            android:layout_toLeftOf="@+id/re_get_sms"
+            android:layout_weight="1"
+            android:background="@drawable/not_click"
+            android:text="@string/vip_phone"
+            android:padding="@dimen/Five"
+            android:singleLine="true"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/fourteen"
+            android:gravity="center_vertical"/>
+
+        <Button
+            android:id="@+id/y_reg_get_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/Twenty"
+            android:background="@drawable/next"
+            android:paddingLeft="@dimen/Twenty"
+            android:paddingRight="@dimen/Twenty"
+            android:text="@string/get_sms"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sixteen"
+            android:maxLength="8"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/y_reg_sms_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Forty"
+        android:layout_marginLeft="@dimen/Twenty"
+        android:layout_marginRight="@dimen/Twenty"
+        android:layout_marginTop="@dimen/Twenty"
+        android:background="@drawable/reg_edit"
+        android:hint="@string/re_sms_code"
+        android:padding="@dimen/Five"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textSize="@dimen/fourteen" />
+
+    <EditText
+        android:id="@+id/y_reg_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Forty"
+        android:layout_marginLeft="@dimen/Twenty"
+        android:layout_marginRight="@dimen/Twenty"
+        android:layout_marginTop="@dimen/Twenty"
+        android:background="@drawable/reg_edit"
+        android:hint="@string/reg_hint_password"
+        android:padding="@dimen/Five"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textSize="@dimen/fourteen" />
+
+    <Button
+        android:id="@+id/y_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Fifty"
+        android:layout_marginLeft="@dimen/Twenty"
+        android:layout_marginRight="@dimen/Twenty"
+        android:layout_marginTop="@dimen/Forty"
+        android:background="@drawable/next"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        android:textSize="@dimen/eighteen" />
+
+    <TextView
+        android:id="@+id/n_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/Twenty"
+        android:layout_marginTop="@dimen/Twenty"
+        android:text="@string/n_reg"
+        android:textColor="@color/big_title"
+        android:textSize="@dimen/fourteen" />
+
+</LinearLayout>

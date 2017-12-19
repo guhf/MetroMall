@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.metro.metromall.activities.StartActivity"
+    android:orientation="vertical"
+    android:id="@+id/start"
+    android:visibility="invisible">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/Advertising_Image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/start"/>
+        <RelativeLayout
+            android:id="@+id/start_skip"
+            android:layout_width="@dimen/Eighty"
+            android:layout_height="@dimen/ThirtyFive"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/Twenty"
+            android:layout_marginTop="@dimen/Twenty"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/add_cart">
+            <TextView
+                android:id="@+id/start_skip_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sixteen"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+        <!--<Button-->
+            <!--android:id="@+id/start_skip"-->
+            <!--android:layout_width="@dimen/Eighty"-->
+            <!--android:layout_height="@dimen/ThirtyFive"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginRight="@dimen/Twenty"-->
+            <!--android:layout_marginTop="@dimen/Twenty"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:background="@drawable/add_cart"-->
+            <!--android:textSize="@dimen/fourteen"-->
+            <!--android:textColor="@color/white"/>-->
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Eighty"
+        android:src="@mipmap/menber_bg"
+        android:scaleType="fitXY"/>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" android:padding="@dimen/Ten" >
+    <!--背景颜色-->
+    <solid android:color="@color/translucent"/>
+    <!--边角圆角角度-->
+    <corners android:radius="@dimen/Five"/>
+    <!--边框颜色及宽度-->
+    <!--<stroke android:width="@dimen/One" android:color="@color/dot_gray"/>-->
+
+</shape>

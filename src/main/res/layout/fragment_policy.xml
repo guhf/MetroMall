@@ -1,0 +1,215 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bak"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context="com.metro.metromall.fragments.vip_center.PolicyFragment">
+    <include layout="@layout/fragment_title_gp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/faq"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/Forty"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="@dimen/Five"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/Ten"
+                    android:background="@color/scroll_home_title" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/Thirty"
+                    android:text="@string/faq"
+                    android:textColor="@color/tel"
+                    android:textSize="@dimen/sixteen" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/Ten" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/faq_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/Fifteen"
+                android:textColor="@color/home_notice"
+                android:textSize="@dimen/twelve"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/change_gods_policy"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/Forty"
+                android:layout_marginTop="@dimen/Five"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="@dimen/Five"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/Ten"
+                    android:background="@color/scroll_home_title" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/Thirty"
+                    android:text="@string/change_gods_policy"
+                    android:textColor="@color/tel"
+                    android:textSize="@dimen/sixteen" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/Ten" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/change_gods_policy_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/Fifteen"
+                android:textColor="@color/home_notice"
+                android:textSize="@dimen/twelve"
+                android:visibility="gone" />
+            <RelativeLayout
+                android:id="@+id/payment_method"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/Forty"
+                android:layout_marginTop="@dimen/Five"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="@dimen/Five"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/Ten"
+                    android:background="@color/scroll_home_title" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/Thirty"
+                    android:text="@string/payment_method"
+                    android:textColor="@color/tel"
+                    android:textSize="@dimen/sixteen" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/Ten" />
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/payment_method_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/Fifty"
+                android:src="@mipmap/payment_method"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/Fifteen"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/payment_method_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/Fifteen"
+                android:textColor="@color/home_notice"
+                android:textSize="@dimen/twelve"
+                android:visibility="gone" />
+            <RelativeLayout
+                android:id="@+id/dispatching"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/Forty"
+                android:layout_marginTop="@dimen/Five"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="@dimen/Five"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/Ten"
+                    android:background="@color/scroll_home_title" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/Thirty"
+                    android:text="@string/dispatching"
+                    android:textColor="@color/tel"
+                    android:textSize="@dimen/sixteen" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/Ten" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/dispatching_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/Fifteen"
+                android:textColor="@color/home_notice"
+                android:textSize="@dimen/twelve"
+                android:visibility="gone" />
+            <RelativeLayout
+                android:id="@+id/deal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/Forty"
+                android:layout_marginTop="@dimen/Five"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="@dimen/Five"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/Ten"
+                    android:background="@color/scroll_home_title" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/Thirty"
+                    android:text="@string/deal"
+                    android:textColor="@color/tel"
+                    android:textSize="@dimen/sixteen" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/Ten" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/deal_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/Fifteen"
+                android:textColor="@color/home_notice"
+                android:textSize="@dimen/twelve"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

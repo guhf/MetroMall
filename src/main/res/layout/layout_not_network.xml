@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bak"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:id="@+id/not_network">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/TwoHundred"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="网络请求失败"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/sixteen"
+        android:layout_marginTop="@dimen/Ten"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="请检查您的网络"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/twelve"
+        android:layout_marginTop="@dimen/Ten"/>
+    <Button
+        android:layout_width="@dimen/Eighty"
+        android:layout_height="@dimen/Thirty"
+        android:background="@drawable/next"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/Thirty"
+        android:text="重新加载"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fourteen"/>
+</LinearLayout>

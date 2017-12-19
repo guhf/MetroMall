@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context="com.metro.metromall.fragments.search.SearchFragment">
+
+    <include layout="@layout/fragment_title_gp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Fifty"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/recent_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/search_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/recent_search" />
+
+            <View
+                android:id="@+id/recent_search_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/Two"
+                android:layout_alignParentBottom="true"
+                android:background="@color/tel" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line_view"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/Fifteen"
+            android:layout_marginTop="@dimen/Fifteen"
+            android:background="@color/tel" />
+
+        <RelativeLayout
+            android:id="@+id/top_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/search_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/top_search" />
+
+            <View
+                android:id="@+id/top_search_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/Two"
+                android:layout_alignParentBottom="true"
+                android:background="@color/tel" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dot_gray" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/history_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/Ten"></android.support.v7.widget.RecyclerView>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/top_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/Ten"></android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/Thirty"
+                android:layout_marginBottom="@dimen/Twenty">
+
+                <TextView
+                    android:id="@+id/empty_search_history"
+                    style="@style/search_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/Thirty"
+                    android:layout_marginLeft="@dimen/Ten"
+                    android:layout_marginRight="@dimen/Ten"
+                    android:background="@drawable/text_bak_search"
+                    android:gravity="center"
+                    android:text="@string/empty_search_history" />
+
+                <TextView
+                    android:id="@+id/in_batch"
+                    style="@style/search_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/Thirty"
+                    android:layout_marginLeft="@dimen/Ten"
+                    android:layout_marginRight="@dimen/Ten"
+                    android:background="@drawable/text_bak_search"
+                    android:gravity="center"
+                    android:text="@string/in_batch" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

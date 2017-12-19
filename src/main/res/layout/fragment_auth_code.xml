@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.metro.metromall.fragments.login.AuthCodeFragment"
+    android:orientation="vertical"
+    android:background="@color/bak"
+    android:clickable="true">
+
+    <include layout="@layout/fragment_title_gp"/>
+
+    <EditText
+        android:id="@+id/re_account"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Forty"
+        android:background="@drawable/reg_edit"
+        android:layout_marginLeft="@dimen/Twenty"
+        android:layout_marginRight="@dimen/Twenty"
+        android:layout_marginTop="@dimen/Fifty"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/fourteen"
+        android:padding="@dimen/Five"
+        android:singleLine="true"
+        android:hint="@string/re_hint_account"
+        android:textColorHint="@color/gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/Thirty"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <EditText
+            android:id="@+id/re_auth_code"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/Forty"
+            android:layout_weight="1"
+            android:background="@drawable/reg_edit"
+            android:layout_marginLeft="@dimen/Twenty"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/fourteen"
+            android:padding="@dimen/Five"
+            android:singleLine="true"
+            android:hint="@string/re_auth_code"
+            android:textColorHint="@color/gray"
+            android:maxLength="4"/>
+        <com.metro.metromall.utils.ValidationCode
+            android:id="@+id/validation_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/Ten"
+            android:layout_marginRight="@dimen/Twenty"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/re_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Fifty"
+        android:background="@drawable/next"
+        android:layout_marginLeft="@dimen/Twenty"
+        android:layout_marginRight="@dimen/Twenty"
+        android:layout_marginTop="@dimen/Thirty"
+        android:text="@string/next"
+        android:textSize="@dimen/eighteen"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

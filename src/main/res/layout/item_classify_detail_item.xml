@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/Five"
+    android:id="@+id/classify_detail">
+    <ImageView
+        android:id="@+id/classify_item_img"
+        android:layout_width="@dimen/Eighty"
+        android:layout_height="@dimen/Eighty"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/classify_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/small_title"
+        android:textSize="@dimen/fourteen"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

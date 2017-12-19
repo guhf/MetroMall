@@ -1,0 +1,127 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.metro.metromall.fragments.main.ShopCarFragment"
+    android:background="@color/bak"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <include layout="@layout/fragment_title_gp"/>
+    <!--空购物车-->
+    <LinearLayout
+        android:id="@+id/null_shop_car"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/null_shop_car"
+            android:layout_marginTop="@dimen/Hundred"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/null_shop_car"
+            android:textSize="@dimen/sixteen"
+            android:textColor="@color/tel"
+            android:layout_marginTop="@dimen/Thirty"
+            android:textStyle="normal"/>
+        <Button
+            android:id="@+id/stroll"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/Forty"
+            android:background="@drawable/next"
+            android:text="@string/stroll"
+            android:textSize="@dimen/sixteen"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/Thirty"
+            android:paddingLeft="@dimen/Twenty"
+            android:paddingRight="@dimen/Twenty"/>
+    </LinearLayout>
+
+    <!--非空购物车-->
+
+
+
+        <RelativeLayout
+            android:id="@+id/shop_car"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ScrollView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/Fifty"
+                android:layout_alignParentBottom="true"
+                android:background="@color/bak">
+                <CheckBox
+                    android:id="@+id/cb_all_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/Ten"
+                    android:background="@drawable/shop_car_checkbox"
+                    android:button="@null"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/all_check"
+                    android:textSize="@dimen/fourteen"
+                    android:textColor="@color/home_notice"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/cb_all_check"
+                    android:layout_marginLeft="@dimen/Five"/>
+                <LinearLayout
+                    android:id="@+id/total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/clearing"
+                    android:layout_marginRight="@dimen/Thirty"
+                    android:layout_marginTop="@dimen/Five">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total"
+                        android:textSize="@dimen/fourteen"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥0"
+                        android:textSize="@dimen/eighteen"
+                        android:textColor="@color/red" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/discount_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/weight"
+                    android:textSize="@dimen/twelve"
+                    android:textColor="@color/gray"
+                    android:layout_toLeftOf="@+id/clearing"
+                    android:layout_marginRight="@dimen/Thirty"
+                    android:layout_marginBottom="@dimen/Five"
+                    android:layout_below="@+id/total"/>
+
+                <TextView
+                    android:id="@+id/clearing"
+                    android:layout_width="@dimen/Hundred"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/clearing"
+                    android:textSize="@dimen/eighteen"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:background="@color/dot_gray"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+</FrameLayout>

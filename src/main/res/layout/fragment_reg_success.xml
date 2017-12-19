@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.metro.metromall.fragments.login.RegSuccessFragment"
+    android:orientation="vertical"
+    android:background="@color/bak"
+    android:gravity="center_horizontal"
+    android:clickable="true">
+
+    <include layout="@layout/fragment_title_gp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reg_success"
+        android:textColor="@color/scroll_home_title"
+        android:textSize="@dimen/twenty"
+        android:layout_marginTop="@dimen/Fifty"/>
+    <Button
+        android:id="@+id/perfect_information"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Forty"
+        android:background="@drawable/next"
+        android:layout_marginTop="@dimen/Fifty"
+        android:layout_marginLeft="@dimen/Twenty"
+        android:layout_marginRight="@dimen/Twenty"
+        android:textSize="@dimen/eighteen"
+        android:textColor="@color/white"
+        android:text="@string/perfect_information"/>
+    <Button
+        android:id="@+id/go_mall"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Forty"
+        android:background="@drawable/next"
+        android:layout_marginTop="@dimen/Twenty"
+        android:layout_marginLeft="@dimen/Twenty"
+        android:layout_marginRight="@dimen/Twenty"
+        android:textSize="@dimen/eighteen"
+        android:textColor="@color/white"
+        android:text="@string/go_mall"/>
+
+</LinearLayout>

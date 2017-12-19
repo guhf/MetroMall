@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bak"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context="com.metro.metromall.activities.GoodsDetailActivity">
+    <include layout="@layout/fragment_title_gp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--轮播图-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/goods_detail_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+                <LinearLayout
+                    android:id="@+id/dots"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/Twenty"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/Fifteen"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" />
+            </RelativeLayout>
+
+
+            <RadioGroup
+                android:id="@+id/goods_radio"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/Fifty"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_alignParentBottom="true">
+
+                <RadioButton
+                    android:id="@+id/goods_introduce"
+                    style="@style/goodsRadioButton"
+                    android:text="@string/goods_introduce"
+                    android:checked="true"/>
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray"/>
+                <RadioButton
+                    android:id="@+id/goods_specs"
+                    style="@style/goodsRadioButton"
+                    android:text="@string/goods_specs"/>
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray"/>
+                <RadioButton
+                    android:id="@+id/pc_detail"
+                    style="@style/goodsRadioButton"
+                    android:text="@string/pc_detail"/>
+
+            </RadioGroup>
+
+            <com.metro.metromall.tools.NoScrollViewPager
+                android:id="@+id/goods_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.metro.metromall.tools.NoScrollViewPager>
+
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Fifty"
+        android:background="@color/goods_default_bak">
+
+        <LinearLayout
+            android:id="@+id/goods_collect"
+            android:layout_width="@dimen/Fifty"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/my_collect"
+                android:layout_gravity="center" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collect"
+                android:textSize="@dimen/twelve"
+                android:textColor="@color/vip_recommend"
+                android:layout_marginTop="@dimen/Three"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/goods_shop_car"
+            android:layout_width="@dimen/Fifty"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/goods_collect">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/shop_car"
+                android:layout_gravity="center" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shop_car"
+                android:textSize="@dimen/twelve"
+                android:textColor="@color/vip_recommend"
+                android:layout_marginTop="@dimen/Three"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/goods_add_shop_cart"
+            android:layout_width="@dimen/OneHundredFifty"
+            android:layout_height="@dimen/ThirtyFive"
+            android:background="@drawable/next"
+            android:layout_gravity="center_vertical"
+            android:text="@string/add_shop_cart"
+            android:textSize="@dimen/fifteen"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/Ten"/>
+    </RelativeLayout>
+</LinearLayout>
