@@ -33,7 +33,7 @@ public class WebActivity extends AppCompatActivity implements View.OnClickListen
         web_back.setOnClickListener(this);
     }
     private void loadingData(){
-       String _URL = getIntent().getStringExtra("_url");
+       //String _URL = getIntent().getStringExtra("_url");
         _URL = "https://m.baidu.com/";
         web_view.loadUrl(_URL);
         //设置后可以弹出alert
